@@ -1,0 +1,65 @@
+FOR DOWNLOADING
+	www.git-scm.com
+Download for Windows. (its Auto Detect)
+
+FOR CHECKING VERSION (if already installed.)
+	git --version
+
+CONGFIGURING GIT
+	git config --global user.name "My Name"
+	git config --global user.email "abc@email.com"
+	git config --list
+
+clone & status
+clone :- clonning a repository on our local machine(remote is github and local is a computer)
+	git clone <-some link->
+	git clone <in the github click on green button of code in project  then copy project name from HTTPS>
+
+
+clone means duplicate (we use clone command for copying github files or folders on computer through) 
+
+
+status :- displays the state of the code
+	git status
+Add & Commit (Stagged)
+	git add <-file name->
+
+Commit - it is the record of changes
+	git commit -m "some meaningful message"
+
+git add . (means add all files.)
+
+	git commit -m "some meaningful message"
+
+
+{ C:\Users\Muhammad Yousaf\OneDrive\Desktop\typelec\lec_2>git status
+On branch main
+Your branch is behind 'origin/main' by 1 commit, and can be fast-forwarded.
+  (use "git pull" to update your local branch)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)    
+        modified:   ../lec_1/index.ts
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+C:\Users\Muhammad Yousaf\OneDrive\Desktop\typelec\lec_2>git status
+On branch main
+Your branch is behind 'origin/main' by 1 commit, and can be fast-forwarded.
+  (use "git pull" to update your local branch)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)    
+        modified:   ../lec_1/index.ts
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed) 
+        ./
+
+no changes added to commit (use "git add" and/or "git commit -a")}
+
+PUSH command
+PUSH - upload local repo content to remote repo ( Local to remote)
+	git push origin main
